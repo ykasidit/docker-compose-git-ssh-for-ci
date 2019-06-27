@@ -1,3 +1,3 @@
-FROM docker/compose:1.24.0
-RUN apk add --update git openssh
+FROM docker:stable-git
+RUN apk add --update git openssh python2
 ENTRYPOINT "sh"
